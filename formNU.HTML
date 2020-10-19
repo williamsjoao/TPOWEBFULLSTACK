@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <script src="https://kit.fontawesome.com/faf39b0e3b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS\formNU.css">
+</head>
+<body>
+  <header>
+    <nav> <!--creo una barra de navegacion, como quiero aplicar estilo justo a esta NAV le asigno u selector clase para lyego en ccs poder discriminar y aplicar el style justo a la clase!-->
+      <a href="home.html" class="nav-header"><i class="fas fa-home" target="_blank"></i></a>
+      <a href="Nosotros.html" target="_blank" class="nav-header">Nosotros</a>
+      <a href="Contactanos.html" class="nav-header">Contactanos</a>
+      <a href="#" class="nav-header">Registrate</a>
+      <!-- <a href="#" class="nav-header">inicio</a> !-->
+    </nav>
+    <img src="Imagenes/header paisaje.jpg" alt="logoempresa"><br>
+<br>
+<h1 id="titulo"> Esta es nuestra Pagina de Registro a La Comunidad Venezuela Trip</h1> <br>
+  <h4>
+    Completa Tus Datos
+  </h4>
+  <input type="text" placeholder="Nombre" name="nombre" id="nombre"><br>
+  <input type="text" placeholder="Apellido" name="apellido" id="apellido"><br>
+      <label for="pais">Pais:</label>
+		<select name="pais" id="pais">
+			<option value="mexico">Mexico</option>
+			<option value="españa">españa</option>
+			<option value="Argentina" selected>Argentina</option>
+			<option value="peru">Peru</option>
+      <option value="colombia">Colombia</option></select><br>
+      <label for="tel">tel:</label>
+      <input type="tel" placeholder="+5491100000000" name="tel" id="tel"><br>
+    <input type="checkbox" name="terminos" id="terminos"><label for="terminos">Aceptar Terminos y Condiciones</label>><br>
+    <input type="radio" name="sexo"><label for="sexo">Mujer</label>
+    <input type="radio" name="sexo"><label for="sexo">Hombre</label><br>
+    <input type="submit" value="enviar"><br>        
+</body>
+<footer>
+  <br>
+
+  <p>Derechos Reservados Williams Joao 2020</p>
+  <hr>
+  <table style="text-align: center;" >
+    <caption><h3>Contactanos</h3> </caption>
+    <tr>
+        <th>
+          <a href="https://www.instagram.com/" target="_blank" > 
+          <i class="fab fa-instagram"></i></a></th>
+        <th> <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> </th>
+        <th> <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i>
+        </a>
+         </th>
+    </tr><br>
+    </footer>
+</html>

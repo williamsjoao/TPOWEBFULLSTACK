@@ -1,0 +1,50 @@
+.nav-header{
+  display: inline-block; /*permite agrupar en bloque estos elementos que originalmente al ser una etiquet nav es en linea, y a su ves ajusta el margen superior*/
+  background: cyan;
+  color: aliceblue;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-inline-end: 10px;
+  
+}
+.nav-header:hover
+{ 
+  background-color: #cbd1d8;/*esto es para sombrear cuado el mouse se posicione sobre las anclas, este efecto se esta aplicando a la class=nav-header*/
+}
+nav{
+  background-color: #222831;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex; /*display:flex permite que automaticamente puedas agregar anclas sobre el NAV y se autojueste hacia donde se especifique la justificacion en la siguiente linea*/
+  justify-content: flex-end;
+}
+
+
+h1
+{
+text-align-last: center;
+color:blueviolet;
+}
+h4
+{
+  font-style: oblique;
+  color: brown;
+
+}
+footer
+{
+  text-align-last: center;
+  color: rgb(rgb(255, 208, 0), rgb(132, 206, 132), rgb(0, 183, 255));
+  background-color: rgb(176, 182, 87) ;
+  
+}
+.parrafo
+{
+  color: rgba(12, 47, 243, 0.829);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: medium;
+text-align-last: center;
+}
+  
+
