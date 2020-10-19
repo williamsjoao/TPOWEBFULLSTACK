@@ -1,11 +1,11 @@
 .nav-header{
   display: inline-block; /*permite agrupar en bloque estos elementos que originalmente al ser una etiquet nav es en linea, y a su ves ajusta el margen superior*/
   background: cyan;
-  color: aliceblue;
-  padding: 10px 30px;
+  color: rgb(11, 11, 12);
+  padding: 10px 10px;
   text-decoration: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-inline-end: 10px;
+  margin: 0px 0px 0px 10px;
   
 }
 .nav-header:hover
@@ -14,12 +14,20 @@
 }
 nav{
   background-color: #222831;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex; /*display:flex permite que automaticamente puedas agregar anclas sobre el NAV y se autojueste hacia donde se especifique la justificacion en la siguiente linea*/
+  padding: 10px 10px;
   justify-content: flex-end;
-}
+  display: flex;/*display:flex permite que automaticamente puedas agregar anclas sobre el NAV y se autojueste hacia donde se especifique la justificacion en la siguiente linea*/
+  }
 
+@media (max-width:600px){
+    nav{
+      background;
+      flex-direction: column;
+    }
+    .nav-header{
+      margin: 10px 10px 10px 10px;
+      }
+  }
 
 h1
 {
