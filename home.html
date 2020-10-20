@@ -10,13 +10,28 @@
 <body>
   <header>
     <nav> <!--creo una barra de navegacion, como quiero aplcar estilo justo a esta NAV le asigno un selector clase para lyego en ccs poder discriminar y aplicar el style justo a la clase!-->
-      <a href="#" class="nav-header"><i class="fas fa-home"></i></a>
-      <a href="Nosotros.html" class="nav-header">Nosotros</a>
-      <a href="contactanos.html" class="nav-header">Contactanos</a>
-      <a href="formNU.HTML" class="nav-header">Registarte</a>
-      <a href="#" class="nav-header">Inicia Sesion</a>
-            <!-- <a href="#" class="nav-header">inicio</a> !-->
+      <button class="nav-button" button>onclick="accion()">Menu</button><!--agrego un boton que servira de Menu y acupara todos las anclas cuando la pantalla sea responsiva, es decir las anclas se ocultaran y al hacer click sobre este boton apareceran las anccals nuevamente-->
+      <a href="#" class="nav-header desaparece"><i class="fas fa-home"></i></a> <!--la case "desaparece" me permitira agrupar todas las anclas y hacer un display none cuando el tamaño sea inferior a 600px, es decir todo lo que pertenezca a la clase desaparece que no se muestre cuando el tamaño del display sea inferior a 600opx esto esta en el css-->
+      <a href="Nosotros.html" class="nav-header desaparece">Nosotros</a>
+      <a href="contactanos.html" class="nav-header desaparece">Contactanos</a>
+      <a href="formNU.HTML" class="nav-header desaparece">Registarte</a>
+      <a href="#" class="nav-header desaparece">Inicia Sesion</a>
     </nav>
+    
   </header>
+  <script>
+    function accion(){
+      console.log('esto esta piola');
+      var ancla = document.getElementsByClassName('nav-header');
+      for (var i = 0; i < ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+      }
+
+    }
+    
+  </script>
 </body>
+<!--<script src="javascript/menu.js"></script>!-->
+
+
 </html>
