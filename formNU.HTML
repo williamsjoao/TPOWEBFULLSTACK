@@ -10,13 +10,14 @@
 <body>
   <header>
     <nav> <!--creo una barra de navegacion, como quiero aplicar estilo justo a esta NAV le asigno u selector clase para lyego en ccs poder discriminar y aplicar el style justo a la clase!-->
-      <a href="home.html" class="nav-header"><i class="fas fa-home" target="_blank"></i></a>
-      <a href="Nosotros.html" target="_blank" class="nav-header">Nosotros</a>
-      <a href="Contactanos.html" class="nav-header">Contactanos</a>
-      <a href="#" class="nav-header">Registrate</a>
-      <a href="#" class="nav-header">Inicia Sesion</a>
-      <!-- <a href="#" class="nav-header">inicio</a> !-->
+      <button class="nav-button" button onclick="accion()">Menu</button>
+      <a href="home.html" class="nav-header desaparece"><i class="fas fa-home" target="_blank"></i></a>
+      <a href="#" target="_blank" class="nav-header desaparece">Nosotros</a>
+      <a href="Contactanos.html" class="nav-header desaparece">Contactanos</a>
+      <a href="#" class="nav-header desaparece">Registrate</a>
+      <a href="#" class="nav-header desaparece">Inicia Sesion</a>
     </nav>
+    </header>
     <img src="Imagenes/header paisaje.jpg" alt="logoempresa"><br>
 <br>
 <h1 id="titulo"> Esta es nuestra Pagina de Registro a La Comunidad Venezuela Trip</h1> <br>
@@ -37,7 +38,19 @@
     <input type="checkbox" name="terminos" id="terminos"><label for="terminos">Aceptar Terminos y Condiciones</label>><br>
     <input type="radio" name="sexo"><label for="sexo">Mujer</label>
     <input type="radio" name="sexo"><label for="sexo">Hombre</label><br>
-    <input type="submit" value="enviar"><br>        
+    <input type="submit" value="enviar"><br>  
+    
+    <script>
+      function accion(){
+        console.log('esto esta piola');
+        var ancla = document.getElementsByClassName('nav-header');
+        for (var i = 0; i < ancla.length; i++){
+          ancla[i].classList.toggle('desaparece');
+        }
+  
+      }
+      
+    </script>
 </body>
 <footer>
   <br>
